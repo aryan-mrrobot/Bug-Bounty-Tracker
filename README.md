@@ -1,104 +1,158 @@
-# 🐛 Bug Bounty Tracker
+<h1 align="center"><img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/eca5642d-ca2a-4cde-9723-ae76f447a07a" />
+ Bug Bounty Tracker</h1>
 
-A powerful desktop application for tracking your bug bounty hunting progress, managing vulnerability reports, and analyzing your hunting time.
+<p align="center">
+  A modern <b>Electron desktop application</b> for bug bounty hunters to track progress, manage bug reports,
+  and analyze hunting time — fully offline and privacy-friendly.
+</p>
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
-![Electron](https://img.shields.io/badge/electron-28.0.0-47848F?logo=electron)
+<hr/>
 
----
+<h2>✨ Features</h2>
 
-## ✨ Features
+<h3>📊 Dashboard</h3>
+<ul>
+  <li>Yearly progress tracker (days completed vs remaining)</li>
+  <li>Earnings progress with goal visualization</li>
+  <li>Quick stats: total bugs, critical bugs, daily & weekly hours</li>
+</ul>
 
-### 📊 Dashboard
-- **Progress Tracker** - Animated bars showing yearly progress percentage
-- **Days Counter** - Current day and days remaining to hit your goal
-- **Earnings Progress** - Visual bar with current earnings vs. goal
-- **Quick Stats** - Total bugs, critical bugs, today's hours, weekly hours
+<h3>🐞 Bug Reports</h3>
+<ul>
+  <li>Add and manage bug bounty reports</li>
+  <li>Sort by newest, oldest, highest, or lowest payout</li>
+  <li>Export reports for backup or sharing</li>
+  <li>Severity-based visualization</li>
+</ul>
 
-### 🐞 Bug Reports
-- Grid view with color-coded severity badges
-- Click any card to view full details
-- Add new bugs with title, platform, amount, severity, and description
-- Persistent storage - your data is saved automatically
+<h3>⏱️ Time Tracker</h3>
+<ul>
+  <li>Start / Pause / Stop hunting sessions</li>
+  <li>Activity-based tracking (Bug Hunting, Recon, Learning, etc.)</li>
+  <li>Daily and weekly analytics</li>
+  <li>Session notes support</li>
+</ul>
 
-| Severity | Color |
-|----------|-------|
-| Critical | 🔴 Red |
-| High | 🟠 Orange |
-| Medium | 🟡 Yellow |
-| Low | 🟢 Green |
+<h3>💾 Local & Private</h3>
+<ul>
+  <li>100% offline usage</li>
+  <li>No accounts, no cloud, no tracking</li>
+  <li>All data stored locally</li>
+</ul>
 
-### ⏱️ Time Tracker
-- **Start/Stop/Pause Timer** - Track your hunting sessions
-- **Session Notes** - Add context to each session
-- **Today's Sessions** - View all sessions for the day
-- **Analytics** - Weekly and monthly charts with:
-  - Total hours hunted
-  - Daily average
-  - Session count
+<hr/>
 
----
+<h2>🖼️ Screenshots</h2>
 
-## 🖼️ Screenshots
-
-<img width="1400" height="819" alt="image" src="https://github.com/user-attachments/assets/c609b2ea-492a-4b87-b420-ffd5c16d9398" />
-<img width="1347" height="514" alt="image" src="https://github.com/user-attachments/assets/67013ae9-6edc-474f-bd8b-46d3aaa00f0d" />
-<img width="1392" height="904" alt="image" src="https://github.com/user-attachments/assets/898352bc-f87c-4b5d-a402-21303f3bb614" />
-
-
----
-## 🏗️ Build
-
-This project uses **GitHub Actions** to automatically build for Windows, macOS, and Linux.
-1.  Push to `main`.
-2.  Go to the **Actions** tab in GitHub.
-3.  Download artifacts from the latest run.
-
-### Local Build (Development)
-```bash
-# Windows
-npm run build:win
-
-# macOS
-npm run build:mac
-
-# Linux (AppImage)
-# Note: Building for Linux on Windows requires WSL or Docker due to symlinks
-npm run build:linux
-```
----
+<h3>Dashboard</h3>
+<img width="1381" height="887" alt="image" src="https://github.com/user-attachments/assets/d2379ed2-b6e2-407b-9f3a-cb81fa63f48e" />
 
 
-## 🛠️ Tech Stack
-
-- **Frontend**: Vanilla HTML, CSS, JavaScript
-- **Desktop Framework**: [Electron](https://www.electronjs.org/)
-- **Styling**: Custom dark theme with CSS variables
-- **Data Storage**: localStorage (persistent across sessions)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
+<h3>Bug Reports</h3>
+<img width="1374" height="871" alt="image" src="https://github.com/user-attachments/assets/bf050335-1fe8-43f5-a897-d505d9abe69e" />
 
 
+<h3>Time Tracker</h3>
+<img width="1901" height="1023" alt="image" src="https://github.com/user-attachments/assets/0f853e6f-3bcf-4faa-86ea-9620f858126d" />
 
-<p align="center">Made with ❤️ for bug hunters</p>
 
+<hr/>
 
+<h2>🧰 Tech Stack</h2>
+<ul>
+  <li><b>Electron</b> – Desktop framework</li>
+  <li><b>HTML, CSS, Vanilla JavaScript</b></li>
+  <li><b>LocalStorage</b> – Persistent offline storage</li>
+</ul>
+
+<hr/>
+
+<h2>📦 Download & Install</h2>
+
+<h3>Option 1: Run from Source (Recommended)</h3>
+
+<h4>Prerequisites</h4>
+<ul>
+  <li>Node.js <b>v18+</b></li>
+  <li>Git</li>
+</ul>
+
+<pre><code>git clone https://github.com/YOUR_USERNAME/Bug-Bounty-Tracker.git
+cd Bug-Bounty-Tracker
+npm install
+npm start
+</code></pre>
+
+<p>The application will launch as a <b>desktop app</b>.</p>
+
+<h3>Option 2: Windows Installer (if available)</h3>
+<ol>
+  <li>Go to the <b>Releases</b> section</li>
+  <li>Download <code>Bug Bounty Tracker Setup.exe</code></li>
+  <li>Install and run 🎉</li>
+</ol>
+
+<hr/>
+
+<h2>🛠️ Build the Application</h2>
+
+<h3>Windows</h3>
+<pre><code>npm run build:win
+</code></pre>
+
+<p>
+<b>Note:</b> If you encounter a symlink error on Windows,
+enable <b>Developer Mode</b> from:
+<br/>
+<code>Settings → Privacy & Security → For developers → Developer Mode</code>
+</p>
+
+<hr/>
+
+<h2>📁 Project Structure</h2>
+
+<pre><code>Bug-Bounty-Tracker/
+│
+├── main.js        # Electron main process
+├── preload.js    # Secure IPC bridge
+├── index.html    # UI
+├── styles.css    # Styling
+├── app.js        # App logic
+├── icon.png
+├── package.json
+├── README.md
+└── screenshots/
+</code></pre>
+
+<hr/>
+
+<h2>🚀 Roadmap</h2>
+<ul>
+  <li>SQLite database support</li>
+  <li>Encrypted local storage</li>
+  <li>Tray mode & background timer</li>
+  <li>Auto backup & restore</li>
+  <li>CSV / JSON export</li>
+  <li>Multi-profile support</li>
+</ul>
+
+<hr/>
+
+<h2>🤝 Contributing</h2>
+<ol>
+  <li>Fork the repository</li>
+  <li>Create a feature branch</li>
+  <li>Commit your changes</li>
+  <li>Open a Pull Request</li>
+</ol>
+
+<hr/>
+
+<h2>📄 License</h2>
+<p>MIT License — free to use, modify, and distribute.</p>
+
+<hr/>
+
+<p align="center">
+  Built with ❤️ for bug bounty hunters
+</p>
