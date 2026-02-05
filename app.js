@@ -449,15 +449,7 @@ const BugManager = {
         // Form submit
         form.addEventListener('submit', (e) => {
             e.preventDefault();
-            e.preventDefault();
             this.saveBug();
-        });
-
-        // Edit bug
-        document.getElementById('editBug').addEventListener('click', () => {
-            if (this.currentBugId) {
-                this.openEditModal(this.currentBugId);
-            }
         });
 
         // Delete bug
